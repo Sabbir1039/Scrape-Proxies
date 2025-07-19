@@ -54,3 +54,5 @@ target/
 
 # ---- Project-specific files ----
 # Exclude any sensitive or local-only overrides here
+scrape_proxies/proxies.jsonl
+

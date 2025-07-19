@@ -18,6 +18,7 @@ class ScrapeProxiesSpider(scrapy.Spider):
             yield scrapy.Request(url, callback=self.parse)
 
     def parse(self, response):
+        print(f"Scraping page: {response.url}")
         for row in response.css("tbody tr"):
             try:
                 log.info(f"Scraping page: {response.url}")
